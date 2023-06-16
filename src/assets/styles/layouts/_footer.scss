@@ -1,0 +1,41 @@
+.footer {
+  padding: 1rem 0;
+  background: rgba(248, 166, 140, 0.5);
+}
+
+.footer__list{
+  list-style: none;
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.footer__item{
+  cursor: pointer;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  color: $color-tile;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $color-contrast;
+  }
+}
+
+.footer__github-icon{
+  fill: currentColor;
+}
+
+.footer__name{
+  padding-left: 1rem;
+  font-size: 1.7rem;
+}
+
+.footer__rs-icon {
+  height: 3.2rem;
+  fill: currentColor;
+}

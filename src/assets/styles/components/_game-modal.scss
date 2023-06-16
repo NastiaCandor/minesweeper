@@ -1,0 +1,85 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-backgroung-modal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.modal {
+  position: relative;
+  background-color: $color-primary-light;
+  filter: drop-shadow(10px 10px 0px $color-primary-dark);
+  z-index: 3;
+}
+
+.modal__content {
+  padding: 0 5rem;
+}
+
+.modal__title {
+  text-align: center;
+  color: $color-complimentary;
+  font-size: 6rem;
+  padding: 2rem 0;
+  filter: drop-shadow(5px 5px 0px #aecbdd);
+}
+
+.modal__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__time {
+  padding-left: 3rem;
+}
+
+.modal__score, .modal__time {
+  text-align: center;
+  color: $color-complimentary;
+  font-size: 4rem;
+  line-height: 140%;
+  span {
+    color: $color-primary-dark;
+  }
+}
+
+.modal__last-results {
+  text-align: left;
+  color: $color-complimentary;
+  font-size: 2rem;
+  line-height: 140%;
+  span {
+    color: $color-primary-dark;
+  }
+}
+
+.modal__results-title {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.modal__close-btn {
+  color: $color-contrast;
+  font-family: "DM Mono", monospace, sans-serif;
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 3rem auto 5rem auto;
+  display: flex;
+  cursor: pointer;
+  background-color: $color-primary;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(5px 5px 0px $color-primary-dark);
+  &:hover {
+    background-color: $color-primary-hover;
+  }
+  &:active {
+    filter: none;
+  }
+}
